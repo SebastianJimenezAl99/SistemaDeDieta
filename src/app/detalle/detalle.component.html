@@ -1,0 +1,19 @@
+<br><br>
+<table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th scope="col">
+            <h2>Categoria de peso: {{categorias[c].estado}}</h2>
+            <h3>Dieta Recomendada:</h3>
+        </th>
+      </tr>
+    </thead>
+    <tbody >
+        <tr></tr>
+      <tr *ngFor="let plan of PlanDieta">
+        <th scope="row">■ {{plan.dieta}}</th>
+      </tr>
+    </tbody>
+  </table>
+
+<button type="button" class="btn btn-info" (click)="mostrarPascientes()">Volver</button>

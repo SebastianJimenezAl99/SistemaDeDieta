@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ApiPasciente": "json-server --watch --port 3000 src/data/pascientes.json ",
+    "ApiCategoria": "json-server --watch --port 4000 src/data/categorias.json ",
+    "ApiDieta": "json-server --watch --port 5000 src/data/dieta.json "
   },
   "private": true,
   "dependencies": {

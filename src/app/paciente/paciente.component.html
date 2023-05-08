@@ -1,0 +1,17 @@
+<div style="position: absolute;">
+    <br>
+    <div class="row g-2">
+        <div class="card" style="width: auto; margin-left: 10px;" *ngFor="let pasciente of pascientes ">
+            <div class="card-body">
+                <h5 class="card-title">Pasciente: {{pasciente.id}}</h5>
+                <label class="card-text">Nombre completo: {{pasciente.apellido}} {{pasciente.nombre}}</label><br>
+                <label class="card-text">Nacimiento: {{pasciente.fechanac}}</label><br>
+                <label class="card-text">Genero: {{pasciente.genero}}</label><br>
+                <label class="card-text">Peso(KG): {{pasciente.peso}}</label><br>
+                <label class="card-text">Estatura(M): {{pasciente.estatura}}</label><br>
+                <button type="button" class="btn btn-primary" (click)="calcularDetalle(pasciente.estatura, pasciente.peso)">Detalles</button>
+            </div>
+        </div>
+    </div> 
+    <br>     
+</div>
