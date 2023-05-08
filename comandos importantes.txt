@@ -1,0 +1,5 @@
+ng new (Nombre del proyecto)(Crea un proyecto de angular)
+ng serve -o(Inicar proyecto)
+ng generate component contador / ng g c contado (Se crea un componente)
+ng serve
+npm run
